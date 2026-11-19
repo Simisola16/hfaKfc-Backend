@@ -1,0 +1,65 @@
+[
+  {
+    "id": 4,
+    "username": "Taoheed",
+    "fullName": "Taoheed HFA",
+    "role": "Operations Manager",
+    "email": "taoheed@hfa-portals.com",
+    "active": true,
+    "department": "Audit Operations"
+  },
+  {
+    "id": 1,
+    "username": "Builder",
+    "fullName": "Moses Ola",
+    "role": "Superadmin",
+    "email": "admin@hfa-portals.com",
+    "active": true,
+    "department": "Executive Management"
+  },
+  {
+    "id": 18,
+    "username": "Rashid",
+    "fullName": "Rashid Khan",
+    "role": "Senior Auditor",
+    "email": "rashid@hfa-portals.com",
+    "active": true,
+    "department": "Field Audit"
+  },
+  {
+    "id": 23,
+    "username": "Moin",
+    "fullName": "Moin Akhtar",
+    "role": "Auditor",
+    "email": "moin@hfa-portals.com",
+    "active": true,
+    "department": "Field Audit"
+  },
+  {
+    "id": 25,
+    "username": "Mansur",
+    "fullName": "Mansur Ahmed",
+    "role": "Auditor",
+    "email": "mansur@hfa-portals.com",
+    "active": true,
+    "department": "Field Audit"
+  },
+  {
+    "id": 14,
+    "username": "Company",
+    "fullName": "Caskade Caterers Representative",
+    "role": "Franchisee",
+    "email": "caskade@kfc-franchise.com",
+    "active": true,
+    "department": "Franchise Partner"
+  },
+  {
+    "id": 30,
+    "username": "Amir",
+    "fullName": "Amir SME Group",
+    "role": "Franchisee Manager",
+    "email": "amir@smegroup.co.uk",
+    "active": true,
+    "department": "Franchise Partner"
+  }
+]
