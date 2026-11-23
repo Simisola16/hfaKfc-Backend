@@ -188,6 +188,22 @@ export function fallbackApiMiddleware(req, res, next) {
     return res.json({ success: true, data: updated || { id, category } });
   }
 
+  if (urlPath.startsWith('/api/audits/') && (method === 'PUT' || method === 'PATCH')) {
+    const id = urlPath.split('/').pop();
+    let updated = null;
+    memoryDB.audits = memoryDB.audits.map(a => {
+      if (String(a.id) === id || String(a._id) === id || String(a.appId) === id) {
+        updated = { ...a, ...req.body };
+        return updated;
+      }
+      return a;
+    });
+    if (!updated) {
+      return res.status(404).json({ success: false, error: 'Audit not found' });
+    }
+    return res.json({ success: true, data: updated });
+  }
+
   // 5. Products
   if (urlPath === '/api/products' && method === 'GET') {
     return res.json({ success: true, data: memoryDB.products });
@@ -200,8 +216,48 @@ export function fallbackApiMiddleware(req, res, next) {
   }
 
   // 6. Assignments
+  if (urlPath.startsWith('/api/assignments/auditor/') && method === 'GET') {
+    const username = decodeURIComponent(urlPath.split('/').pop() || '').trim().toLowerCase();
+    const matched = memoryDB.assignments.filter(
+      a => String(a.auditor || '').trim().toLowerCase() === username
+    );
+    const stores = matched.map((asg, idx) => {
+      const storeDoc = memoryDB.stores.find(
+        s => String(s.branchCode) === String(asg.branchCode) || String(s.name).toLowerCase() === String(asg.storeName).toLowerCase()
+      );
+      return {
+        id: String(asg.branchCode || storeDoc?.branchCode || asg.id || idx + 1),
+        assignmentId: String(asg.id || asg._id || idx + 1),
+        name: asg.storeName,
+        shortName: asg.storeName,
+        code: String(asg.branchCode || storeDoc?.branchCode || ''),
+        branchCode: String(asg.branchCode || storeDoc?.branchCode || ''),
+        address: storeDoc?.address || asg.storeName,
+        franchiseeName: asg.franchisee || storeDoc?.franchisee || '',
+        session: asg.session || '',
+        status: asg.status || 'Scheduled',
+        date: asg.date || ''
+      };
+    });
+    return res.json({ success: true, data: stores });
+  }
+
   if (urlPath === '/api/assignments' && method === 'GET') {
-    return res.json({ success: true, data: memoryDB.assignments });
+    const { session, auditor, search } = req.query;
+    let list = [...memoryDB.assignments];
+    if (session && session !== 'ALL') list = list.filter(a => a.session === session);
+    if (auditor && auditor !== 'ALL') {
+      list = list.filter(a => String(a.auditor || '').toLowerCase() === String(auditor).toLowerCase());
+    }
+    if (search) {
+      const q = search.toLowerCase();
+      list = list.filter(a =>
+        a.storeName?.toLowerCase().includes(q) ||
+        a.auditor?.toLowerCase().includes(q) ||
+        a.franchisee?.toLowerCase().includes(q)
+      );
+    }
+    return res.json({ success: true, data: list });
   }
   if (urlPath === '/api/assignments' && method === 'POST') {
     const id = `asg-${Date.now()}`;

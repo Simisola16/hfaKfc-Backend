@@ -33,7 +33,21 @@ const auditSchema = new mongoose.Schema({
     staffTrainingCertified: { type: Boolean, default: true },
     auditorNotes: { type: String, default: '' }
   },
-  evidencePhotos: [{ type: String }]
+  evidencePhotos: [{ type: String }],
+  // Extended fields used by kfc-auditor workflow
+  appId: { type: String, default: '' },
+  auditType: { type: String, default: 'Existing Store' },
+  designation: { type: String, default: 'Shift Runner' },
+  productsSubmitted: { type: Boolean, default: false },
+  checklistSubmitted: { type: Boolean, default: false },
+  outcomeSubmitted: { type: Boolean, default: false },
+  products: { type: [mongoose.Schema.Types.Mixed], default: [] },
+  productComment: { type: String, default: '' },
+  checklistScores: { type: mongoose.Schema.Types.Mixed, default: {} },
+  checklistComments: { type: mongoose.Schema.Types.Mixed, default: {} },
+  randomChecks: { type: [mongoose.Schema.Types.Mixed], default: [] },
+  checklistOverallComment: { type: String, default: '' },
+  outcomeData: { type: mongoose.Schema.Types.Mixed, default: null }
 }, {
   timestamps: true
 });

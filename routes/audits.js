@@ -90,6 +90,45 @@ router.post('/', async (req, res) => {
   }
 });
 
+// PATCH/PUT update full audit (used by kfc-auditor for products, checklist, outcome sheet)
+const updateAuditHandler = async (req, res) => {
+  try {
+    const audit = await Audit.findByIdAndUpdate(
+      req.params.id,
+      { $set: req.body },
+      { new: true }
+    );
+    if (!audit) return res.status(404).json({ success: false, error: 'Audit not found' });
+
+    if (audit.category) {
+      const storeStatus =
+        audit.category === 'Passed'
+          ? 'Passed'
+          : audit.category === 'L3 Critical Fail'
+          ? 'Critical Fail'
+          : 'Under Review';
+
+      await Store.updateOne(
+        { $or: [{ branchCode: audit.branchCode }, { name: audit.storeName }] },
+        {
+          $set: {
+            lastAuditDate: audit.auditDate,
+            status: storeStatus,
+            halalCertified: audit.category === 'Passed'
+          }
+        }
+      );
+    }
+
+    res.json({ success: true, data: audit });
+  } catch (err) {
+    res.status(400).json({ success: false, error: err.message });
+  }
+};
+
+router.put('/:id', updateAuditHandler);
+router.patch('/:id', updateAuditHandler);
+
 // PATCH change audit category (Approve to Passed, move to Review, flag Other Fail, flag L3)
 router.patch('/:id/category', async (req, res) => {
   try {
