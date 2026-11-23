@@ -1,4 +1,5 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import Audit from '../models/Audit.js';
 import Store from '../models/Store.js';
 
@@ -93,9 +94,15 @@ router.post('/', async (req, res) => {
 // PATCH/PUT update full audit (used by kfc-auditor for products, checklist, outcome sheet)
 const updateAuditHandler = async (req, res) => {
   try {
-    const audit = await Audit.findByIdAndUpdate(
-      req.params.id,
-      { $set: req.body },
+    const { _id, id, createdAt, updatedAt, __v, ...safeBody } = req.body || {};
+    const paramId = String(req.params.id || '').trim();
+    const filter = mongoose.Types.ObjectId.isValid(paramId)
+      ? { _id: paramId }
+      : { $or: [{ appId: paramId }, { legacyId: Number(paramId) || -1 }] };
+
+    const audit = await Audit.findOneAndUpdate(
+      filter,
+      { $set: safeBody },
       { new: true }
     );
     if (!audit) return res.status(404).json({ success: false, error: 'Audit not found' });
