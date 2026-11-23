@@ -10,10 +10,10 @@ npm install
 ```
 
 ### 2. Configure Environment Variables
-Verify `.env` has the correct configuration:
+Create a `.env` file (never commit `.env` to Git) with your configuration:
 ```env
 PORT=5050
-MONGODB_URI=mongodb+srv://olamilekanmuhayad_db_user:yNLID7xso4SGtSCm@kfchfa.q1axxfm.mongodb.net/kfc_hfa?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/kfc_hfa?retryWrites=true&w=majority
 ```
 
 ### 3. Run the Backend

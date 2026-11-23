@@ -48,29 +48,17 @@ export function fallbackApiMiddleware(req, res, next) {
   if (urlPath === '/api/auth/login' && method === 'POST') {
     const { username, password } = req.body || {};
     const found = memoryDB.users.find(
-      u => u.username?.toLowerCase() === String(username || '').toLowerCase()
+      u => u.username?.toLowerCase() === String(username || '').trim().toLowerCase()
     );
-    if (
-      (found && (found.password === password || password === '@abc123')) ||
-      (String(username || '').toLowerCase() === 'taoheed' && password === '@abc123') ||
-      password === '@abc123'
-    ) {
-      const u = found || {
-        _id: 'taoheed_admin_id',
-        id: 'taoheed_admin_id',
-        username: 'Taoheed',
-        fullName: 'Taoheed HFA',
-        role: 'Operations Manager',
-        email: 'taoheed@hfa-portals.com',
-      };
+    if (found && found.active !== false && found.password === password) {
       return res.json({
         success: true,
         data: {
-          id: u.id || u._id,
-          username: u.username,
-          fullName: u.fullName,
-          role: u.role,
-          email: u.email,
+          id: found.id || found._id,
+          username: found.username,
+          fullName: found.fullName,
+          role: found.role,
+          email: found.email,
           token: `kfc_jwt_${Date.now()}`
         }
       });

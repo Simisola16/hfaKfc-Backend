@@ -10,31 +10,17 @@ router.post('/login', async (req, res) => {
       return res.status(400).json({ success: false, error: 'Username and password required' });
     }
 
-    const user = await User.findOne({ username: { $regex: new RegExp(`^${username}$`, 'i') } });
+    const user = await User.findOne({ username: { $regex: new RegExp(`^${username.trim()}$`, 'i') } });
 
-    if (
-      (user && user.password === password) ||
-      (username.toLowerCase() === 'taoheed' && password === '@abc123') ||
-      password === '@abc123' ||
-      password === 'admin'
-    ) {
-      const authUser = user || {
-        _id: 'taoheed_admin_id',
-        username: 'Taoheed',
-        fullName: 'Taoheed HFA',
-        role: 'Operations Manager',
-        email: 'taoheed@hfa-portals.com',
-        active: true
-      };
-
+    if (user && user.active !== false && user.password === password) {
       return res.json({
         success: true,
         data: {
-          id: authUser._id,
-          username: authUser.username,
-          fullName: authUser.fullName,
-          role: authUser.role,
-          email: authUser.email,
+          id: user._id,
+          username: user.username,
+          fullName: user.fullName,
+          role: user.role,
+          email: user.email,
           token: `kfc_jwt_${Date.now()}`
         }
       });

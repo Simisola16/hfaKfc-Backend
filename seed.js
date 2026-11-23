@@ -205,7 +205,7 @@ async function seed() {
     email: u.email,
     active: u.active,
     department: u.department,
-    password: '@abc123'
+    password: process.env.SEED_DEFAULT_PASSWORD || 'change-me-on-first-login'
   })));
   console.log(`✓ Inserted ${userDocs.length} Users`);
 

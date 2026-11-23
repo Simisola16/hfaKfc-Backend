@@ -2,9 +2,13 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://olamilekanmuhayad_db_user:yNLID7xso4SGtSCm@kfchfa.q1axxfm.mongodb.net/kfc_hfa?retryWrites=true&w=majority";
+const MONGODB_URI = process.env.MONGODB_URI;
 
 export async function connectDB() {
+  if (!MONGODB_URI) {
+    console.warn('⚠️ MONGODB_URI is not set in .env. Using local high-availability fallback.');
+    return null;
+  }
   try {
     const conn = await mongoose.connect(MONGODB_URI, {
       serverSelectionTimeoutMS: 5000,
