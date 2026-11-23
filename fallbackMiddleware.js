@@ -215,11 +215,42 @@ export function fallbackApiMiddleware(req, res, next) {
     return res.status(201).json({ success: true, data: item });
   }
 
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
+function isAssignedForToday(dateStr, now = new Date()) {
+  if (!dateStr) return false;
+  const s = String(dateStr).trim();
+  const targetY = now.getFullYear();
+  const targetM = now.getMonth();
+  const targetD = now.getDate();
+
+  const dmyText = s.match(/^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/);
+  if (dmyText) {
+    const d = Number(dmyText[1]);
+    const m = MONTHS.indexOf(dmyText[2].toLowerCase());
+    const y = Number(dmyText[3]);
+    return y === targetY && m === targetM && d === targetD;
+  }
+  const ymd = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (ymd) {
+    return Number(ymd[1]) === targetY && Number(ymd[2]) - 1 === targetM && Number(ymd[3]) === targetD;
+  }
+  const dmySlash = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (dmySlash) {
+    return Number(dmySlash[3]) === targetY && Number(dmySlash[2]) - 1 === targetM && Number(dmySlash[1]) === targetD;
+  }
+  const parsed = new Date(s);
+  if (!Number.isNaN(parsed.getTime())) {
+    return parsed.getFullYear() === targetY && parsed.getMonth() === targetM && parsed.getDate() === targetD;
+  }
+  return false;
+}
+
   // 6. Assignments
   if (urlPath.startsWith('/api/assignments/auditor/') && method === 'GET') {
     const username = decodeURIComponent(urlPath.split('/').pop() || '').trim().toLowerCase();
     const matched = memoryDB.assignments.filter(
-      a => String(a.auditor || '').trim().toLowerCase() === username
+      a => String(a.auditor || '').trim().toLowerCase() === username && isAssignedForToday(a.date)
     );
     const stores = matched.map((asg, idx) => {
       const storeDoc = memoryDB.stores.find(
