@@ -11,6 +11,7 @@ const auditSchema = new mongoose.Schema({
   franchiseeId: { type: Number, default: 0 },
   auditor: { type: String, required: true },
   auditDate: { type: String, required: true },
+  endDate: { type: String, default: '' },
   timeIn: { type: String, default: '10:00' },
   timeOut: { type: String, default: '12:00' },
   session: { type: String, default: 'Round Two 2026' },
