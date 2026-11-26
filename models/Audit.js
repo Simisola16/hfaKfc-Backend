@@ -37,6 +37,7 @@ const auditSchema = new mongoose.Schema({
   evidencePhotos: [{ type: String }],
   // Extended fields used by kfc-auditor workflow
   appId: { type: String, default: '' },
+  assignmentId: { type: String, default: '' },
   auditType: { type: String, default: 'Existing Store' },
   designation: { type: String, default: 'Shift Runner' },
   productsSubmitted: { type: Boolean, default: false },
