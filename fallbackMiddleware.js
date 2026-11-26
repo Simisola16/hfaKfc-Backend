@@ -205,40 +205,45 @@ export function fallbackApiMiddleware(req, res, next) {
 
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
-function isAssignedForToday(dateStr, now = new Date()) {
-  if (!dateStr) return false;
+function parseLocalDay(dateStr) {
+  if (!dateStr) return null;
   const s = String(dateStr).trim();
-  const targetY = now.getFullYear();
-  const targetM = now.getMonth();
-  const targetD = now.getDate();
-
   const dmyText = s.match(/^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/);
   if (dmyText) {
     const d = Number(dmyText[1]);
     const m = MONTHS.indexOf(dmyText[2].toLowerCase());
     const y = Number(dmyText[3]);
-    return y === targetY && m === targetM && d === targetD;
+    if (m >= 0) return new Date(y, m, d).getTime();
   }
   const ymd = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
   if (ymd) {
-    return Number(ymd[1]) === targetY && Number(ymd[2]) - 1 === targetM && Number(ymd[3]) === targetD;
+    return new Date(Number(ymd[1]), Number(ymd[2]) - 1, Number(ymd[3])).getTime();
   }
   const dmySlash = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (dmySlash) {
-    return Number(dmySlash[3]) === targetY && Number(dmySlash[2]) - 1 === targetM && Number(dmySlash[1]) === targetD;
+    return new Date(Number(dmySlash[3]), Number(dmySlash[2]) - 1, Number(dmySlash[1])).getTime();
   }
   const parsed = new Date(s);
   if (!Number.isNaN(parsed.getTime())) {
-    return parsed.getFullYear() === targetY && parsed.getMonth() === targetM && parsed.getDate() === targetD;
+    return new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate()).getTime();
   }
-  return false;
+  return null;
+}
+
+function isWithinAssignedDateWindow(asg, now = new Date()) {
+  const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  const startTs = parseLocalDay(asg.startDate || asg.date);
+  const endTs = parseLocalDay(asg.endDate || asg.startDate || asg.date);
+  if (startTs === null) return false;
+  const effectiveEnd = endTs !== null ? endTs : startTs;
+  return todayTs >= startTs && todayTs <= effectiveEnd;
 }
 
   // 6. Assignments
   if (urlPath.startsWith('/api/assignments/auditor/') && method === 'GET') {
     const username = decodeURIComponent(urlPath.split('/').pop() || '').trim().toLowerCase();
     const matched = memoryDB.assignments.filter(
-      a => String(a.auditor || '').trim().toLowerCase() === username && isAssignedForToday(a.date)
+      a => String(a.auditor || '').trim().toLowerCase() === username && isWithinAssignedDateWindow(a)
     );
     const stores = matched.map((asg, idx) => {
       const storeDoc = memoryDB.stores.find(
@@ -255,7 +260,9 @@ function isAssignedForToday(dateStr, now = new Date()) {
         franchiseeName: asg.franchisee || storeDoc?.franchisee || '',
         session: asg.session || '',
         status: asg.status || 'Scheduled',
-        date: asg.date || ''
+        date: asg.date || '',
+        startDate: asg.startDate || asg.date || '',
+        endDate: asg.endDate || asg.startDate || asg.date || ''
       };
     });
     return res.json({ success: true, data: stores });

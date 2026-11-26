@@ -6,6 +6,8 @@ const assignmentSchema = new mongoose.Schema({
   franchisee: { type: String, default: '' },
   auditor: { type: String, required: true },
   date: { type: String, required: true },
+  startDate: { type: String, default: '' },
+  endDate: { type: String, default: '' },
   session: { type: String, default: 'Round Two 2026' },
   status: { type: String, enum: ['Scheduled', 'In Progress', 'Completed'], default: 'Scheduled' },
   notification: { type: String, default: 'E-mail Dispatched' }

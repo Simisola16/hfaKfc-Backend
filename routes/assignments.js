@@ -6,48 +6,54 @@ const router = express.Router();
 
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
-function isAssignedForToday(dateStr, now = new Date()) {
-  if (!dateStr) return false;
+function parseLocalDay(dateStr) {
+  if (!dateStr) return null;
   const s = String(dateStr).trim();
-  const targetY = now.getFullYear();
-  const targetM = now.getMonth();
-  const targetD = now.getDate();
 
-  // Match DD-MMM-YYYY (e.g. 23-Nov-2026)
+  // Match DD-MMM-YYYY (e.g. 26-Nov-2026)
   const dmyText = s.match(/^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/);
   if (dmyText) {
     const d = Number(dmyText[1]);
     const m = MONTHS.indexOf(dmyText[2].toLowerCase());
     const y = Number(dmyText[3]);
-    return y === targetY && m === targetM && d === targetD;
+    if (m >= 0) return new Date(y, m, d).getTime();
   }
 
   // Match YYYY-MM-DD (or ISO prefix)
   const ymd = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
   if (ymd) {
-    return Number(ymd[1]) === targetY && Number(ymd[2]) - 1 === targetM && Number(ymd[3]) === targetD;
+    return new Date(Number(ymd[1]), Number(ymd[2]) - 1, Number(ymd[3])).getTime();
   }
 
   // Match DD/MM/YYYY
   const dmySlash = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (dmySlash) {
-    return Number(dmySlash[3]) === targetY && Number(dmySlash[2]) - 1 === targetM && Number(dmySlash[1]) === targetD;
+    return new Date(Number(dmySlash[3]), Number(dmySlash[2]) - 1, Number(dmySlash[1])).getTime();
   }
 
   const parsed = new Date(s);
   if (!Number.isNaN(parsed.getTime())) {
-    return parsed.getFullYear() === targetY && parsed.getMonth() === targetM && parsed.getDate() === targetD;
+    return new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate()).getTime();
   }
-  return false;
+  return null;
 }
 
-// GET assigned stores for a specific auditor on TODAY's allocated date (used by kfc-auditor login)
+function isWithinAssignedDateWindow(asg, now = new Date()) {
+  const todayTs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  const startTs = parseLocalDay(asg.startDate || asg.date);
+  const endTs = parseLocalDay(asg.endDate || asg.startDate || asg.date);
+  if (startTs === null) return false;
+  const effectiveEnd = endTs !== null ? endTs : startTs;
+  return todayTs >= startTs && todayTs <= effectiveEnd;
+}
+
+// GET assigned stores for a specific auditor active within the [startDate, endDate] window
 router.get('/auditor/:username', async (req, res) => {
   try {
     const { username } = req.params;
     const regex = new RegExp(`^${username.trim()}$`, 'i');
     const allAssignments = await Assignment.find({ auditor: { $regex: regex } }).sort({ date: -1 });
-    const assignments = allAssignments.filter((asg) => isAssignedForToday(asg.date));
+    const assignments = allAssignments.filter((asg) => isWithinAssignedDateWindow(asg));
 
     // Enrich with store details (address, storeId, franchisee)
     const stores = await Promise.all(
@@ -66,7 +72,9 @@ router.get('/auditor/:username', async (req, res) => {
           franchiseeName: asg.franchisee || storeDoc?.franchisee || '',
           session: asg.session || '',
           status: asg.status || 'Scheduled',
-          date: asg.date || ''
+          date: asg.date || '',
+          startDate: asg.startDate || asg.date || '',
+          endDate: asg.endDate || asg.startDate || asg.date || ''
         };
       })
     );
