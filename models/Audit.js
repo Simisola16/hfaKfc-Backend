@@ -49,7 +49,10 @@ const auditSchema = new mongoose.Schema({
   checklistComments: { type: mongoose.Schema.Types.Mixed, default: {} },
   randomChecks: { type: [mongoose.Schema.Types.Mixed], default: [] },
   checklistOverallComment: { type: String, default: '' },
-  outcomeData: { type: mongoose.Schema.Types.Mixed, default: null }
+  outcomeData: { type: mongoose.Schema.Types.Mixed, default: null },
+  recommendationReason: { type: String, default: '' },
+  finalized: { type: Boolean, default: false },
+  finalizedAt: { type: String, default: '' }
 }, {
   timestamps: true
 });
