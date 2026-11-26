@@ -139,10 +139,21 @@ router.patch('/:id', updateAuditHandler);
 // PATCH change audit category (Approve to Passed, move to Review, flag Other Fail, flag L3)
 router.patch('/:id/category', async (req, res) => {
   try {
-    const { category } = req.body;
+    const { category, adminDecisionReason, adminJudgedBy, adminJudgedAt } = req.body;
+    const updateFields = { category };
+    if (typeof adminDecisionReason === 'string') {
+      updateFields.adminDecisionReason = adminDecisionReason;
+    }
+    if (typeof adminJudgedBy === 'string') {
+      updateFields.adminJudgedBy = adminJudgedBy;
+    }
+    if (typeof adminJudgedAt === 'string') {
+      updateFields.adminJudgedAt = adminJudgedAt;
+    }
+
     const audit = await Audit.findByIdAndUpdate(
       req.params.id,
-      { $set: { category } },
+      { $set: updateFields },
       { new: true }
     );
 
