@@ -55,6 +55,7 @@ const auditSchema = new mongoose.Schema({
   adminDecisionReason: { type: String, default: '' },
   adminJudgedBy: { type: String, default: '' },
   adminJudgedAt: { type: String, default: '' },
+  shareHistory: { type: [mongoose.Schema.Types.Mixed], default: [] },
   finalized: { type: Boolean, default: false },
   finalizedAt: { type: String, default: '' }
 }, {
