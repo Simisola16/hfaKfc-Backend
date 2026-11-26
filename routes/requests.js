@@ -12,6 +12,16 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.post('/', async (req, res) => {
+  try {
+    const reqDoc = new Request(req.body);
+    await reqDoc.save();
+    res.status(201).json({ success: true, data: reqDoc });
+  } catch (err) {
+    res.status(400).json({ success: false, error: err.message });
+  }
+});
+
 router.patch('/:id/status', async (req, res) => {
   try {
     const { status } = req.body;

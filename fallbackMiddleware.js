@@ -289,6 +289,12 @@ function isAssignedForToday(dateStr, now = new Date()) {
   if (urlPath === '/api/requests' && method === 'GET') {
     return res.json({ success: true, data: memoryDB.requests });
   }
+  if (urlPath === '/api/requests' && method === 'POST') {
+    const id = `req-${Date.now()}`;
+    const item = { ...req.body, id, _id: id, status: req.body?.status || 'Pending' };
+    memoryDB.requests.unshift(item);
+    return res.status(201).json({ success: true, data: item });
+  }
   if (urlPath.startsWith('/api/requests/') && urlPath.endsWith('/status') && method === 'PATCH') {
     const parts = urlPath.split('/');
     const id = parts[parts.length - 2];

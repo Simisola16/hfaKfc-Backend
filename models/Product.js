@@ -4,6 +4,12 @@ const productSchema = new mongoose.Schema({
   name: { type: String, required: true, trim: true },
   supplier: { type: String, required: true, trim: true },
   code: { type: String, required: true, trim: true },
+  category: {
+    type: String,
+    enum: ['Frozen', 'Chilled', 'Ambient'],
+    default: 'Ambient',
+    index: true
+  },
   manufacturer: { type: String, default: 'Certified European Facility' },
   siteEcCode: { type: String, default: 'UK 4022 EC' },
   status: { type: String, default: 'Accepted' },

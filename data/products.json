@@ -12,7 +12,8 @@
     "documents": [
       "Statement  Halal Pudliszki.pdf",
       "KFC Halal Submission Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20,
@@ -27,7 +28,8 @@
     "documents": [
       "OneDrive_2_05-05-2021.zip",
       "Zinger Popcorn.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 21,
@@ -42,7 +44,8 @@
     "documents": [
       "Halal Certificate expiry 30.07.23.pdf",
       "Nards Halal Food Authority Statement 13.05.21.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 22,
@@ -57,7 +60,8 @@
     "documents": [
       "KFC Halal STATEMENT 2018.pdf",
       "KFC Halal Submission Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 23,
@@ -72,7 +76,8 @@
     "documents": [
       "Spec.docx",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 24,
@@ -87,7 +92,8 @@
     "documents": [
       "Product Approval Request Form_YUM005_25.06.21.pdf",
       "TH139_KFC Halal Submission Form_25.06.21.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 25,
@@ -102,7 +108,8 @@
     "documents": [
       "901605314  Product Approval Request Form.docx",
       "901605314 KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 26,
@@ -114,7 +121,8 @@
     "status": "Accepted",
     "dateApproved": "27-Jul-2021",
     "notes": "Hello Shirini, Hope you are well. Please see attached 1st part of the approval documents for registering the Moy Park MSG Free Popcorn for the KFC's H",
-    "documents": []
+    "documents": [],
+    "category": "Frozen"
   },
   {
     "id": 27,
@@ -128,7 +136,8 @@
     "notes": "Hello Shirini, Hope you are well. Please see attached the approval documents for registering the Kerry Belgian Chocolate Sauce for the KFC's Halal sto",
     "documents": [
       "20546367 - Product Approval Request Form v7.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 28,
@@ -143,7 +152,8 @@
     "documents": [
       "DVG Belgian Chocolate.pdf",
       "HALAL Cert.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 29,
@@ -158,7 +168,8 @@
     "documents": [
       "_Product Approval Request Form RGU178.docx",
       "RGU178 - KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30,
@@ -173,7 +184,8 @@
     "documents": [
       "Product Approval Request Form v9.pdf",
       "Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 31,
@@ -188,7 +200,8 @@
     "documents": [
       "Halal Submission Form.xls",
       "Kfc fries spec.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 32,
@@ -203,7 +216,8 @@
     "documents": [
       "HFA Statement Zinger .docx",
       "HFA Submission form 1.jpg"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 33,
@@ -218,7 +232,8 @@
     "documents": [
       "9147 KFC Coleslaw Mayo v1.docx",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 34,
@@ -232,7 +247,8 @@
     "notes": "Hello Shirini, Please also see the attached supplier ingredient specification document for the new colesalw product.Thank you, Ayman",
     "documents": [
       "Rapeseed 15L - 45RAPOIL15L v7.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 35,
@@ -244,7 +260,8 @@
     "status": "Accepted",
     "dateApproved": "22-Oct-2021",
     "notes": "Hi Shirini,  Please see below the KFC codes for the Natures Way Coleslaw     products both large and regular sizes:  76099     Coleslaw - regular 7610",
-    "documents": []
+    "documents": [],
+    "category": "Chilled"
   },
   {
     "id": 36,
@@ -259,7 +276,8 @@
     "documents": [
       "Halal Submission - Mash Potato.xls",
       "HFA Statement.pdf"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 37,
@@ -274,7 +292,8 @@
     "documents": [
       "Fletcher glazed bun allergen form.xlsx",
       "KFC Halal Submission.xlsx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 38,
@@ -289,7 +308,8 @@
     "documents": [
       "PIF_MAVA07ZFIL v1-20.pdf",
       "Product Approval Request Form - V9 - MFUK.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 39,
@@ -304,7 +324,8 @@
     "documents": [
       "Apollo.pdf",
       "Halal statement.pdf"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40,
@@ -319,7 +340,8 @@
     "documents": [
       "Tomatoes.pdf",
       "Halal statement.pdf"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 41,
@@ -334,7 +356,8 @@
     "documents": [
       "KFC Halal Submission Form SALT.xls",
       "Product Approval Request Form SALT.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 42,
@@ -349,7 +372,8 @@
     "documents": [
       "KFC Halal Submission Form SUGAR.xls",
       "Product Approval Request Form SUGAR.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 43,
@@ -364,7 +388,8 @@
     "documents": [
       "Approval Request Form V9 Fresh.docx",
       "KFC Halal Submission Form Fresh.xls"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 44,
@@ -379,7 +404,8 @@
     "documents": [
       "KFC Halal Submission Form Frozen.xls",
       "pproval Request Form V9 Frozen.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 45,
@@ -394,7 +420,8 @@
     "documents": [
       "BRCGS certificate Nutshell Portions.pdf",
       "Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 46,
@@ -409,7 +436,8 @@
     "documents": [
       "KFC MILK AND EGG Approval Request Form.docx",
       "KFC MILK AND EGG  Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 47,
@@ -424,7 +452,8 @@
     "documents": [
       "Cadbury One Blend.pdf",
       "Halal Mondelez.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 48,
@@ -439,7 +468,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Site Statement v10 Kerry 24.01.22.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 49,
@@ -454,7 +484,8 @@
     "documents": [
       "Baris HFA statement.pdf",
       "Halal certificate of compliance.JPG"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 50,
@@ -469,7 +500,8 @@
     "documents": [
       "Approval Request Zinger Cream Cheese Jalap.docx",
       "Submission form - Zinger Cream Cheese Jalap.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 51,
@@ -484,7 +516,8 @@
     "documents": [
       "KFC Halal Submission - Mac & Cheese.xls",
       "Product Approval Request  Mac  Cheese.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 52,
@@ -498,7 +531,8 @@
     "notes": "Hi Shirin, Hope you are well.  Please see attached the submission form for registering the new manufacturing site for Mikado Food. This is Mikado Food",
     "documents": [
       "KFC Halal Submission Form - Mikado.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 53,
@@ -513,7 +547,8 @@
     "documents": [
       "Chicken Fillet HFA Product Approval Form.docx",
       "Chicken Fillet HFA Site Statement.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 54,
@@ -528,7 +563,8 @@
     "documents": [
       "HFA EXTRA 22.pdf",
       "KFC Halal Submission Form - AAK 25.3.22.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 55,
@@ -543,7 +579,8 @@
     "documents": [
       "KFC CORONATION CURRY  Product Approval Form.docx",
       "KFC CORONATION CURRY Site Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 56,
@@ -558,7 +595,8 @@
     "documents": [
       "Approval Form.pdf",
       "Site Statement New Blends.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 57,
@@ -573,7 +611,8 @@
     "documents": [
       "Approval Form.pdf",
       "Site Statement New Blends.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 58,
@@ -585,7 +624,8 @@
     "status": "Rejected",
     "dateApproved": "29-Jun-2022",
     "notes": "",
-    "documents": []
+    "documents": [],
+    "category": "Frozen"
   },
   {
     "id": 59,
@@ -600,7 +640,8 @@
     "documents": [
       "Halal HFCE.pdf",
       "KFC Halal Submission.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 60,
@@ -615,7 +656,8 @@
     "documents": [
       "HFCE.pdf",
       "KOREAN BBQ  Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 61,
@@ -630,7 +672,8 @@
     "documents": [
       "EU 20712313-UTZ CHOCOLATE SAUCE KFC Spec.pdf",
       "Halal Site Statement v10 (1).docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10061,
@@ -645,7 +688,8 @@
     "documents": [
       "EU Tech Spec Template Aero.pdf",
       "Halal 8068.12321.IH210049.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10062,
@@ -660,7 +704,8 @@
     "documents": [
       "RGU062 KFC Halal Submission Form.xls",
       "RGU062 Product Approval Request Form - V9(1).docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10063,
@@ -674,7 +719,8 @@
     "notes": "Hi Shirin,  Hope you are well.  Please see attached the HFCE certificate for the Korean BBQ Sauce with the removal of Barley Gluten.  Please do let me",
     "documents": [
       "MCC.4650.5481.220131.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10064,
@@ -689,7 +735,8 @@
     "documents": [
       "Buttermilk and Garlic Mayo dip.pdf",
       "KFC BRMLK &GRLC MAYO  200X30ML.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10065,
@@ -704,7 +751,8 @@
     "documents": [
       "Ketucky BBQ dip.pdf",
       "KFC KENTUCKY BBQ DIP 200X30ML.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10066,
@@ -719,7 +767,8 @@
     "documents": [
       "KFC REAL TOMATO KTCP 200X30ML.xls",
       "Real Tomato Ketchup dip.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10067,
@@ -734,7 +783,8 @@
     "documents": [
       "KFC STY SWEET CHILLI 200X30ML.xls",
       "MCC.4650. 21470. 220001.UK - KFC Sauces.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10068,
@@ -749,7 +799,8 @@
     "documents": [
       "Supercharger  Product dip.pdf",
       "STAT 19 - Food Contact Packaging.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10069,
@@ -763,7 +814,8 @@
     "notes": "Hi Shirin,   Please see attached the completed halal submission form for the supercharger dip pot from Peterborough site.  Many thanks,  Ayman",
     "documents": [
       "KFC SUPERCHRGER DIP 200X30ML.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10070,
@@ -778,7 +830,8 @@
     "documents": [
       "Product Approval Request.docx",
       "Site Statement v10(1).docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10071,
@@ -793,7 +846,8 @@
     "documents": [
       "Product Approval Request Form - V9.docx",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10072,
@@ -808,7 +862,8 @@
     "documents": [
       "Product Approval Request Form - V9.docx",
       "KFC Halal Submission Form_.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10073,
@@ -823,7 +878,8 @@
     "documents": [
       "Product Approval Request Form - V9.docx",
       "KFC Halal Submission Form_.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10074,
@@ -838,7 +894,8 @@
     "documents": [
       "Product Approval Request Form - V9.docx",
       "KFC Halal Submission Form_.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10075,
@@ -853,7 +910,8 @@
     "documents": [
       "HCE.pdf",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10076,
@@ -868,7 +926,8 @@
     "documents": [
       "HCE.pdf",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10077,
@@ -883,7 +942,8 @@
     "documents": [
       "KFC Halal Submission Form MF.xls",
       "Product Approval Request Form MF.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10078,
@@ -898,7 +958,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "product Approval Request.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10079,
@@ -913,7 +974,8 @@
     "documents": [
       "Copy of KFC Halal Submission Form.xls",
       "Product Approval Request Form - V9.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10080,
@@ -925,7 +987,8 @@
     "status": "Accepted",
     "dateApproved": "30-Nov-2022",
     "notes": "Hi Shirin,  Hope you are well.  Please see attached the Carpigiani Lubricant product safety data sheet for the ice cream machine.  Many thanks,  Ayman",
-    "documents": []
+    "documents": [],
+    "category": "Ambient"
   },
   {
     "id": 10081,
@@ -937,7 +1000,8 @@
     "status": "Accepted",
     "dateApproved": "30-Nov-2022",
     "notes": "Hi Shirin,  Hope you are well.  Please see attached the Carpigiani Lubricant product safety data sheet for the ice cream machine.  Many thanks,  Ayman",
-    "documents": []
+    "documents": [],
+    "category": "Ambient"
   },
   {
     "id": 10082,
@@ -952,7 +1016,8 @@
     "documents": [
       "Drayton Site Statement v10_130922.docx",
       "KFC Halal Submission Form.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10083,
@@ -967,7 +1032,8 @@
     "documents": [
       "Drayton Site Statement v10_130922.docx",
       "KFC Halal Submission Form.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10084,
@@ -982,7 +1048,8 @@
     "documents": [
       "RGU079 KFC Halal Submission Form.xls",
       "Site Statement v10.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10085,
@@ -997,7 +1064,8 @@
     "documents": [
       "RGU079 KFC Halal Submission Form.xls",
       "Site Statement v10.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10086,
@@ -1012,7 +1080,8 @@
     "documents": [
       "BUFFALO Approval Request Form.pdf",
       "BUFFALO SAUCE Site Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10087,
@@ -1027,7 +1096,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Product Approval Request Form - V9.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 10088,
@@ -1042,7 +1112,8 @@
     "documents": [
       "MCC.4650.5481.220133.UK.pdf",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10089,
@@ -1057,7 +1128,8 @@
     "documents": [
       "Product Approval Request Form - V9 76179.docx",
       "KFC Halal Submission Form - 76179.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10090,
@@ -1072,7 +1144,8 @@
     "documents": [
       "~~HFA Cert  exp 040324.pdf",
       "HFA Site Statement 2023.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10091,
@@ -1087,7 +1160,8 @@
     "documents": [
       "Approval Form - SNV Laval.docx",
       "Site Statement- SNV Laval.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10092,
@@ -1102,7 +1176,8 @@
     "documents": [
       "Halal Site Statement Littleborough.pdf",
       "KFC TERIYAKI SCE 4X1L Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10093,
@@ -1117,7 +1192,8 @@
     "documents": [
       "KFC SMOKEY BBQ 6X1L Approval Form.pdf",
       "KFC SMOKEY BBQ 6X1L KFC Halal Submission.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10094,
@@ -1132,7 +1208,8 @@
     "documents": [
       "Halal Site Statement Littleborough.pdf",
       "KFC SUPERCHRGER 6X1L Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10095,
@@ -1147,7 +1224,8 @@
     "documents": [
       "Halal Certificate Adriaan Goede.pdf",
       "Halal Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10096,
@@ -1162,7 +1240,8 @@
     "documents": [
       "KFC OR BREADING MIX UK  Approval Form.pdf",
       "KFC OR BREADING MIX UK Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10097,
@@ -1177,7 +1256,8 @@
     "documents": [
       "KFC SPICY CRANBERRY Halal Submission Form.pdf",
       "KFC SPICY CRANBERRY Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10098,
@@ -1191,7 +1271,8 @@
     "notes": "Hi Shirin,  As requested, please see attached the completed approval form for the ISP hot wings product from Heijs Food supplier.  Many thanks,  Ayman",
     "documents": [
       "Approval Request Form - V9 - ISP Hotwings.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10099,
@@ -1205,7 +1286,8 @@
     "notes": "Hi Shirin,  Please see attached the completed approval form for the ISP Zinger Fillet product from Heijs Food supplier.  Many thanks,  Ayman",
     "documents": [
       "Approval Request Form - V9 - Zinger Fillet.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10100,
@@ -1219,7 +1301,8 @@
     "notes": "Hi Shirin,  Please see attached the completed approval form for the Mini Fillets product from Heijs Food supplier.  Many thanks,  Ayman",
     "documents": [
       "Approval Request Form - V9 - Mini Fillet.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10101,
@@ -1233,7 +1316,8 @@
     "notes": "Hi Shirin,  Please see attached the completed approval form for the OR Fillets product from Heijs Food supplier.  Many thanks,  Ayman",
     "documents": [
       "Approval Request Form - V9 - OR-95 Fillet.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10102,
@@ -1248,7 +1332,8 @@
     "documents": [
       "certificate Farm Frites.pdf",
       "Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 10103,
@@ -1263,7 +1348,8 @@
     "documents": [
       "76234 KFC blend.xls",
       "Site Statement v10-KFC Frying Blend.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 10104,
@@ -1278,7 +1364,8 @@
     "documents": [
       "Grill Marked  Brioche Style Bun.xls",
       "Grill Marked Brioche Style Bun.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20104,
@@ -1293,7 +1380,8 @@
     "documents": [
       "Halal Submission -Fried onion.xls",
       "KFC WE specification Fried onions.xlsx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20105,
@@ -1308,7 +1396,8 @@
     "documents": [
       "Halal Submission Walkers Max Paprika 50g.xls",
       "Halal Statement - AF Cumbria.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20106,
@@ -1323,7 +1412,8 @@
     "documents": [
       "Halal SubmissionWalkers Max SV 50g.xls",
       "Halal Statement - AF Cumbria.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20107,
@@ -1338,7 +1428,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20108,
@@ -1353,7 +1444,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20109,
@@ -1368,7 +1460,8 @@
     "documents": [
       "BUTTERMILK SCE 6X1L Approval Form.pdf",
       "BUTTERMILK SCE 6X1L Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20110,
@@ -1383,7 +1476,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20111,
@@ -1398,7 +1492,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20112,
@@ -1413,7 +1508,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20113,
@@ -1428,7 +1524,8 @@
     "documents": [
       "VEGAN MAYO 4X975ML Halal Submission Form.xls",
       "VEGAN MAYO 4X975ML Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20114,
@@ -1443,7 +1540,8 @@
     "documents": [
       "HFCE certificate - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20115,
@@ -1458,7 +1556,8 @@
     "documents": [
       "Halal Certificate Oils & Fats.pdf",
       "Halal Submission Form Rapeseed.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20116,
@@ -1473,7 +1572,8 @@
     "documents": [
       "Halal Certificate Oils & Fats.pdf",
       "Halal Submission 70%SH 30%RS.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20117,
@@ -1488,7 +1588,8 @@
     "documents": [
       "Cad Cocoa 1k Approval Request Form - V9 (1).pdf",
       "Cadbury One Blend New.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20118,
@@ -1503,7 +1604,8 @@
     "documents": [
       "EU Tech Spec 1158620 version 3.pdf",
       "HALAL Certificate Lummen.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20119,
@@ -1518,7 +1620,8 @@
     "documents": [
       "BUFFALO SAUCE 4X1L Approval Request Form.pdf",
       "BUFFALO SAUCE 4X1L Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20120,
@@ -1533,7 +1636,8 @@
     "documents": [
       "Approval Request Nestl� Mint Sauce 1KG Bottle.pdf",
       "Halal_Site Statement v10_240425.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20121,
@@ -1547,7 +1651,8 @@
     "notes": "Hi Shirin,  Hope you are well.  Attached is the spec doc for the Nestle Condensed Milk alternative packaging 170g tube format to replace current 450g ",
     "documents": [
       "FICHA TECNICA LCA E2C023_13.07.2023.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20122,
@@ -1562,7 +1667,8 @@
     "documents": [
       "KFC Halal Submission Form UK 240710.xlsm",
       "Product Approval Request Form (DK) 240709.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20123,
@@ -1577,7 +1683,8 @@
     "documents": [
       "3 STEP GRAVY Halal Submission Form.xls",
       "3 STEP GRAVY Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20124,
@@ -1592,7 +1699,8 @@
     "documents": [
       "GRAVY BOOSTERPACK Halal Submission Form.xls",
       "GRAVY BOOSTERPACK Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20125,
@@ -1607,7 +1715,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 20126,
@@ -1622,7 +1731,8 @@
     "documents": [
       "Halal  Product Approval Form.pdf",
       "Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20127,
@@ -1637,7 +1747,8 @@
     "documents": [
       "Halal cert AMC VL.pdf",
       "Halal_Submission_Oatly.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20128,
@@ -1652,7 +1763,8 @@
     "documents": [
       "Halal Certificate (Hamilton).pdf",
       "Halal Submission Form Westrock Coffee.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20129,
@@ -1667,7 +1779,8 @@
     "documents": [
       "Halal Certificate Council of America.pdf",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20130,
@@ -1682,7 +1795,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20131,
@@ -1697,7 +1811,8 @@
     "documents": [
       "Popping Boba with Hibiscus Flavour.pdf",
       "Boba-KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20132,
@@ -1712,7 +1827,8 @@
     "documents": [
       "Popping Boba with Hibiscus Flavour.pdf",
       "Boba-KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20133,
@@ -1727,7 +1843,8 @@
     "documents": [
       "Supplier Certificates & Statements.zip",
       "D9248_KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20134,
@@ -1742,7 +1859,8 @@
     "documents": [
       "Pecan Deluxe_Site Statement.docx",
       "Supplier Certificates & Statements.zip"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20135,
@@ -1757,7 +1875,8 @@
     "documents": [
       "HFCE Halal Certificate.pdf",
       "KFC Halal Submission Form (Lemonade).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20136,
@@ -1769,7 +1888,8 @@
     "status": "Rejected",
     "dateApproved": "25-Nov-2024",
     "notes": "melina weds muhayad",
-    "documents": []
+    "documents": [],
+    "category": "Ambient"
   },
   {
     "id": 20137,
@@ -1781,7 +1901,8 @@
     "status": "Accepted",
     "dateApproved": "25-Nov-2024",
     "notes": "",
-    "documents": []
+    "documents": [],
+    "category": "Frozen"
   },
   {
     "id": 20138,
@@ -1793,7 +1914,8 @@
     "status": "Rejected",
     "dateApproved": "25-Nov-2024",
     "notes": "",
-    "documents": []
+    "documents": [],
+    "category": "Frozen"
   },
   {
     "id": 20139,
@@ -1805,7 +1927,8 @@
     "status": "Rejected",
     "dateApproved": "25-Nov-2024",
     "notes": "",
-    "documents": []
+    "documents": [],
+    "category": "Frozen"
   },
   {
     "id": 20140,
@@ -1820,7 +1943,8 @@
     "documents": [
       "KFC Halal Submission FormFC.xls",
       "Site StatementFC.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20141,
@@ -1835,7 +1959,8 @@
     "documents": [
       "ZINGER RANCH SPEC.pdf",
       "HFCE KFC Sauces.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20142,
@@ -1850,7 +1975,8 @@
     "documents": [
       "ORIGINAL RANCH SPEC.pdf",
       "HFCE KFC Sauces.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20143,
@@ -1865,7 +1991,8 @@
     "documents": [
       "2024 Halal certificate.pdf",
       "Caramel KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20144,
@@ -1880,7 +2007,8 @@
     "documents": [
       "2024 Halal certificate.pdf",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20145,
@@ -1895,7 +2023,8 @@
     "documents": [
       "KFC Halal Submission Form (3).xls",
       "Product Approval Request Form - V9 (2).docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20146,
@@ -1910,7 +2039,8 @@
     "documents": [
       "DARK CHOCOLATE.pdf",
       "H1379 Dark Chocolate sauce.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20147,
@@ -1924,7 +2054,8 @@
     "notes": "This is the follow up of the last dark chocolate sauce submission for the additional info.    The manufacturer is Puratos Delcolade in France.  Please",
     "documents": [
       "H1379 DARK CHOCOLATE SAUCE.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20148,
@@ -1939,7 +2070,8 @@
     "documents": [
       "Dark chocolate Syrup.pdf",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20149,
@@ -1954,7 +2086,8 @@
     "documents": [
       "Dark Chocolate IBC.docx",
       "Dark Chocolate IBC.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20150,
@@ -1969,7 +2102,8 @@
     "documents": [
       "Product Approval Request Form - V9 (2).docx",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20151,
@@ -1984,7 +2118,8 @@
     "documents": [
       "HOT HONEY SYRUP 4PK-1L - ENGLISH.PDF",
       "Halal Site Statement Monin USA.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20152,
@@ -1999,7 +2134,8 @@
     "documents": [
       "2024 Halal certificate Products.pdf",
       "COCONUT SYRUP.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20153,
@@ -2014,7 +2150,8 @@
     "documents": [
       "H1208 MANGO SYRUP.pdf",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20154,
@@ -2029,7 +2166,8 @@
     "documents": [
       "H1208 MANGO SYRUP.pdf",
       "KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20155,
@@ -2044,7 +2182,8 @@
     "documents": [
       "2024 Halal certificate Products.pdf",
       "Mojito IBC.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20156,
@@ -2059,7 +2198,8 @@
     "documents": [
       "6x1ltr Morello Cherry syrup.docx",
       "6x1ltr Morello Cherry.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20157,
@@ -2074,7 +2214,8 @@
     "documents": [
       "H1435 2022-Raspeberry Puree.pdf",
       "H1435 Raspberry Puree).docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20158,
@@ -2089,7 +2230,8 @@
     "documents": [
       "H991 2022-Mango Puree.pdf",
       "H991 Mango Puree.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20159,
@@ -2104,7 +2246,8 @@
     "documents": [
       "Iceberg Lettuce.docx",
       "Iceberg Lettuce_021224.xls"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 20160,
@@ -2119,7 +2262,8 @@
     "documents": [
       "leaf mix spec.pdf",
       "Leaf Mix_191124 (1).xls"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 20161,
@@ -2134,7 +2278,8 @@
     "documents": [
       "KFC SMOKEY BBQ DIP Halal Submission Form.xls",
       "KFC SMOKEY BBQ DIP Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20162,
@@ -2149,7 +2294,8 @@
     "documents": [
       "KFC BMLK&GRC MAYO Halal Submission Form.xls",
       "KFCMLK&GRC MAYO Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20163,
@@ -2164,7 +2310,8 @@
     "documents": [
       "MCC.4650.21470.240021.UK - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20164,
@@ -2179,7 +2326,8 @@
     "documents": [
       "KFC SWT CHILI  Halal Submission Form.xls",
       "KFC SWT CHILI Product Approval Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20165,
@@ -2194,7 +2342,8 @@
     "documents": [
       "MCC.4650.21470.240021.UK - KFC Sauces.pdf",
       "Peterborough Halal Site Statement v10.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20166,
@@ -2209,7 +2358,8 @@
     "documents": [
       "3 Step Gravy Specification..pdf",
       "Halal Certificate Symmetry Park.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20167,
@@ -2224,7 +2374,8 @@
     "documents": [
       "KFC Halal Submission Form v2.xlsm",
       "Site Statement v10 (4).docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20168,
@@ -2239,7 +2390,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Product Approval Request Form - V9.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20169,
@@ -2254,7 +2406,8 @@
     "documents": [
       "Ingredient Halal Data.xlsx",
       "KFC Halal Submission Form.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20170,
@@ -2269,7 +2422,8 @@
     "documents": [
       "CARAMEL FLAVOURED SAUCE.pdf",
       "Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20171,
@@ -2284,7 +2438,8 @@
     "documents": [
       "Green Tea Regular.docx",
       "KFC Halal Submission Form (3).xlsm"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20172,
@@ -2298,7 +2453,8 @@
     "notes": "Hi Shirin,  Hope you are doing well.  I wanted to inform you that KFC has done some cost reduction project on the freezer to fryer bites reducing the ",
     "documents": [
       "HFA Filets bites FTF - 26g - Frozen - Korat.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20173,
@@ -2313,7 +2469,8 @@
     "documents": [
       "9 Halal Cert_YUM020_exp040826.pdf",
       "Case label.jpg"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20174,
@@ -2328,7 +2485,8 @@
     "documents": [
       "KFC Gherkins Spec.pdf",
       "KFC Halal Submission Form (2).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20175,
@@ -2343,7 +2501,8 @@
     "documents": [
       "4650.21470.IH250030 - KFC PBO.pdf",
       "HOT ZINGER DRIP Halal Submission.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20176,
@@ -2358,7 +2517,8 @@
     "documents": [
       "Halal Site Statement v10_250303.pdf",
       "Raspberry Sauce Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20177,
@@ -2373,7 +2533,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 20178,
@@ -2388,7 +2549,8 @@
     "documents": [
       "KFC-Halal-Submission.xls",
       "Site-Statement-v10-2-1.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20179,
@@ -2403,7 +2565,8 @@
     "documents": [
       "CERTIFICATE OF CONFORMITY.pdf",
       "KFC Halal Submission Form (2).xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20180,
@@ -2418,7 +2581,8 @@
     "documents": [
       "FY-Halal-Certificate pinnacle-yeast.pdf",
       "KFC-Halal-Submission Form.xls"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 20181,
@@ -2433,7 +2597,8 @@
     "documents": [
       "KFC - Site Statement v10 250617.pdf",
       "KFC Halal Submission Form.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 30178,
@@ -2448,7 +2613,8 @@
     "documents": [
       "Approval Request Form",
       "Green Tea  KFC Halal Submission Form (3).xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30179,
@@ -2463,7 +2629,8 @@
     "documents": [
       "Halal Certificate exp 250126.pdf",
       "Halal site statement 11.8.25.pdf"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 30180,
@@ -2475,7 +2642,8 @@
     "status": "Accepted",
     "dateApproved": "15-Aug-2025",
     "notes": "Dear Imtiaz,  I have now re-submitted the product with the correct commercial name 'Crinkle Cut Sliced Gherkins in Vinegar'.   Many thanks,  Ayman",
-    "documents": []
+    "documents": [],
+    "category": "Ambient"
   },
   {
     "id": 30181,
@@ -2490,7 +2658,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "KFC Spec Report pdf.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 30182,
@@ -2505,7 +2674,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Pepsi Gingerbread (21194_001_P01).pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30183,
@@ -2520,7 +2690,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Pepsi Gingerbread (21194_001_P01).pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30184,
@@ -2535,7 +2706,8 @@
     "documents": [
       "4650.21470.IH250032 - KFC.pdf",
       "KFC Spec Report.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30185,
@@ -2550,7 +2722,8 @@
     "documents": [
       "4650.21470.IH250032 - KFC.pdf",
       "Halal Site Statement v10 2025 (3).pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30186,
@@ -2565,7 +2738,8 @@
     "documents": [
       "halal submission form.xls",
       "product approval form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30187,
@@ -2580,7 +2754,8 @@
     "documents": [
       "AAK Sweden.pdf",
       "Phoenix Brands Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30188,
@@ -2595,7 +2770,8 @@
     "documents": [
       "Bennett Opie Site.pdf",
       "L962 3x950g Opies Lemon Slices V2.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30189,
@@ -2610,7 +2786,8 @@
     "documents": [
       "901768132 FKFC HOT HONEY 4X1L .pdf",
       "FKFC Hot Honey.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30190,
@@ -2625,7 +2802,8 @@
     "documents": [
       "901768132 FKFC HOT HONEY 4X1L .pdf",
       "FKFC Hot Honey.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30191,
@@ -2640,7 +2818,8 @@
     "documents": [
       "Monin Bourges.pdf",
       "Products - Georges Monin SAS, France..pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30192,
@@ -2655,7 +2834,8 @@
     "documents": [
       "Coleslaw 100g.pdf",
       "Coleslaw 100g.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 30193,
@@ -2670,7 +2850,8 @@
     "documents": [
       "Coleslaw 200g.pdf",
       "Coleslaw 200g.xlsx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 30194,
@@ -2685,7 +2866,8 @@
     "documents": [
       "Cheese Sauce.docx",
       "Cheese sauce.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30195,
@@ -2700,7 +2882,8 @@
     "documents": [
       "Cold Brew coffee .xls",
       "Cold brew concentrate BIB 3L.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30196,
@@ -2715,7 +2898,8 @@
     "documents": [
       "H996 Strawberry puree.xls",
       "halal puree.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30197,
@@ -2730,7 +2914,8 @@
     "documents": [
       "105g BBQ Bean .xls",
       "105g BBQ Bean.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 30198,
@@ -2745,7 +2930,8 @@
     "documents": [
       "230g BBQ Bean.docx",
       "230g BBQ Bean.xls"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 30199,
@@ -2760,7 +2946,8 @@
     "documents": [
       "Monin Site Statement.pdf",
       "Syrups Monin, France.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30200,
@@ -2775,7 +2962,8 @@
     "documents": [
       "Cloudy Lemonade Halal Submission Form.xls",
       "Cloudy Lemonade Product Approval Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30201,
@@ -2790,7 +2978,8 @@
     "documents": [
       "76023854 Product Specification.pdf",
       "Heinz Halal Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30202,
@@ -2805,7 +2994,8 @@
     "documents": [
       "Apple Tango Specification.pdf",
       "Site Statement.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30203,
@@ -2820,7 +3010,8 @@
     "documents": [
       "Product Approval Request Form.pdf",
       "Product Halal Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30204,
@@ -2835,7 +3026,8 @@
     "documents": [
       "Lemonade Material Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30205,
@@ -2850,7 +3042,8 @@
     "documents": [
       "Frickles Product Approval Request Form.docx",
       "Site Statement.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 30206,
@@ -2865,7 +3058,8 @@
     "documents": [
       "Site Statement.docx",
       "Jalopenos Product Approval.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30207,
@@ -2880,7 +3074,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Pickle Juice Product Approval Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30208,
@@ -2895,7 +3090,8 @@
     "documents": [
       "Halal Certificate Jalopenos.pdf",
       "Annex 3 - Halal Cert Jalopenos.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30209,
@@ -2910,7 +3106,8 @@
     "documents": [
       "Halal Certificate Yeast.pdf",
       "Frickles Product Specification.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 30210,
@@ -2925,7 +3122,8 @@
     "documents": [
       "Material Halal Suitability Natural flavour.docx",
       "Material Halal Suitability Vinegar.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30211,
@@ -2940,7 +3138,8 @@
     "documents": [
       "Product Specification.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30212,
@@ -2955,7 +3154,8 @@
     "documents": [
       "Halal Product Certificate.pdf",
       "Halal Site Statement PR.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30213,
@@ -2970,7 +3170,8 @@
     "documents": [
       "Product Specification.pdf",
       "Halal Submission Form DB.xls"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30214,
@@ -2985,7 +3186,8 @@
     "documents": [
       "Halal Certificate Sriracha.pdf",
       "Halal Site Statement SR.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30215,
@@ -3000,7 +3202,8 @@
     "documents": [
       "Halal Statement PS.docx",
       "Halal Suitability PS.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30216,
@@ -3015,7 +3218,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Raw Material Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30217,
@@ -3030,7 +3234,8 @@
     "documents": [
       "KFC Halal Submission Form.xls",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 30218,
@@ -3045,7 +3250,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40217,
@@ -3060,7 +3266,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40218,
@@ -3075,7 +3282,8 @@
     "documents": [
       "Garlic Parm Material Halal Suitability.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40219,
@@ -3090,7 +3298,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40220,
@@ -3105,7 +3314,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40221,
@@ -3120,7 +3330,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40222,
@@ -3135,7 +3346,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40223,
@@ -3150,7 +3362,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40224,
@@ -3165,7 +3378,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40225,
@@ -3180,7 +3394,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40226,
@@ -3195,7 +3410,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40227,
@@ -3210,7 +3426,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40228,
@@ -3225,7 +3442,8 @@
     "documents": [
       "approval form Jalapeno Sauce.docx",
       "Halal_Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40229,
@@ -3240,7 +3458,8 @@
     "documents": [
       "Halal_Certificate.pdf",
       "approval form Texas BBQ.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40230,
@@ -3255,7 +3474,8 @@
     "documents": [
       "Halal_Certificate.pdf",
       "Supercharger Dip.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40231,
@@ -3270,7 +3490,8 @@
     "documents": [
       "approval formOriginal Sauce.docx",
       "Halal_Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40232,
@@ -3285,7 +3506,8 @@
     "documents": [
       "approval form Hot Honey Habanero .docx",
       "Halal_Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40233,
@@ -3300,7 +3522,8 @@
     "documents": [
       "approval form- Honey Mustard.docx",
       "Halal_Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40234,
@@ -3315,7 +3538,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40235,
@@ -3330,7 +3554,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40236,
@@ -3345,7 +3570,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Chilled"
   },
   {
     "id": 40237,
@@ -3360,7 +3586,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Monin- France- Site Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40238,
@@ -3375,7 +3602,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Monin- France- Site Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40239,
@@ -3389,7 +3617,8 @@
     "notes": "Hi, IKO products have already approved by HFA.  Please find attached for HFA certificate.   Many thanks Janny",
     "documents": [
       "IKO HFA certificate.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40240,
@@ -3403,7 +3632,8 @@
     "notes": "Hi, IKO products have already approved by HFA.  Please find attached for HFA certificate.    Many thanks Janny",
     "documents": [
       "IKO HFA certificate.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40241,
@@ -3417,7 +3647,8 @@
     "notes": "Hi, IKO products have already approved by HFA.  Please find attached for HFA certificate.    Many thanks Janny",
     "documents": [
       "IKO HFA certificate.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40242,
@@ -3432,7 +3663,8 @@
     "documents": [
       "Material Halal Suitability.docx",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40243,
@@ -3447,7 +3679,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form - Peterborough.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40244,
@@ -3462,7 +3695,8 @@
     "documents": [
       "Material Halal Suitability Declaration.docx",
       "Product Approval Request Form - Peterborough.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40245,
@@ -3477,7 +3711,8 @@
     "documents": [
       "AvZ Site Statement.docx",
       "Material Halal Suitability Declaration.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40246,
@@ -3492,7 +3727,8 @@
     "documents": [
       "AvZ Site Statement.docx",
       "Material Halal Suitability Declaration.docx"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40247,
@@ -3507,7 +3743,8 @@
     "documents": [
       "H1686 Cold Brew.docx",
       "Monin Bourges 2026-08-13.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40248,
@@ -3522,7 +3759,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40249,
@@ -3537,7 +3775,8 @@
     "documents": [
       "Material Halal Suitability Declaration.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40250,
@@ -3552,7 +3791,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40251,
@@ -3567,7 +3807,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "HDH Site Statement.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40252,
@@ -3582,7 +3823,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "HDH Site Statement v10 2026.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40253,
@@ -3597,7 +3839,8 @@
     "documents": [
       "Additional KFC Supplier 22 May 2026.pdf",
       "OR Migration Report and Spec.pdf"
-    ]
+    ],
+    "category": "Frozen"
   },
   {
     "id": 40254,
@@ -3612,7 +3855,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "HDH Site Statement v10 2026.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40255,
@@ -3627,7 +3871,8 @@
     "documents": [
       "HDH Site Statement v10 2026.pdf",
       "Halal Certificate.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40256,
@@ -3642,7 +3887,8 @@
     "documents": [
       "Material Halal Suitability Declaration V1.docx",
       "Product Approval Request Form - V9.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40257,
@@ -3657,7 +3903,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40258,
@@ -3672,7 +3919,8 @@
     "documents": [
       "Halal Certificate.pdf",
       "Material Halal Suitability Declaration.docx"
-    ]
+    ],
+    "category": "Ambient"
   },
   {
     "id": 40259,
@@ -3687,6 +3935,7 @@
     "documents": [
       "Halal Certificate.pdf",
       "Product Approval Request Form.pdf"
-    ]
+    ],
+    "category": "Ambient"
   }
 ]

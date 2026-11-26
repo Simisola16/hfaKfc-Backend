@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    const { search, supplier } = req.query;
+    const { search, supplier, category } = req.query;
     const query = {};
 
     if (search) {
@@ -19,6 +19,10 @@ router.get('/', async (req, res) => {
 
     if (supplier && supplier !== 'ALL') {
       query.supplier = supplier;
+    }
+
+    if (category && category !== 'ALL') {
+      query.category = category;
     }
 
     const products = await Product.find(query).sort({ name: 1 });
