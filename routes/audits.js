@@ -167,5 +167,23 @@ router.patch('/:id/category', async (req, res) => {
   }
 });
 
+// DELETE single audit
+router.delete('/:id', async (req, res) => {
+  try {
+    const paramId = String(req.params.id || '').trim();
+    const filter = mongoose.Types.ObjectId.isValid(paramId)
+      ? { _id: paramId }
+      : { $or: [{ appId: paramId }, { legacyId: Number(paramId) || -1 }] };
+
+    const deleted = await Audit.findOneAndDelete(filter);
+    if (!deleted) {
+      return res.status(404).json({ success: false, error: 'Audit not found' });
+    }
+    res.json({ success: true, data: deleted });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 export default router;
 
