@@ -17,6 +17,7 @@ import appealRoutes from './routes/appeals.js';
 import feedbackRoutes from './routes/feedback.js';
 import mapRoutes from './routes/map.js';
 import userRoutes from './routes/users.js';
+import kfcUserRoutes from './routes/kfcUsers.js';
 import authRoutes from './routes/auth.js';
 
 dotenv.config();
@@ -47,6 +48,7 @@ app.use('/api/appeals', appealRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/map', mapRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/kfc-users', kfcUserRoutes);
 app.use('/api/auth', authRoutes);
 
 // Health check

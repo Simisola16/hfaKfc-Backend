@@ -33,6 +33,7 @@ const memoryDB = {
   feedback: loadJson('feedback.json'),
   logs: loadJson('auditor_logs.json'),
   users: loadJson('users.json'),
+  kfcUsers: [],
 };
 
 export function fallbackApiMiddleware(req, res, next) {
@@ -383,6 +384,35 @@ function isWithinAssignedDateWindow(asg, now = new Date()) {
       return u;
     });
     return res.json({ success: true, data: updated || { id } });
+  }
+
+  // 12. KFC HQ Users (fallback)
+  if (urlPath === '/api/kfc-users' && method === 'GET') {
+    return res.json({
+      success: true,
+      data: memoryDB.kfcUsers.map(({ password, ...rest }) => rest)
+    });
+  }
+  if (urlPath === '/api/kfc-users' && method === 'POST') {
+    const id = `kfc-usr-${Date.now()}`;
+    const item = { ...req.body, id, _id: id, active: true };
+    memoryDB.kfcUsers.unshift(item);
+    const { password, ...safe } = item;
+    return res.status(201).json({ success: true, data: safe });
+  }
+  if (urlPath === '/api/kfc-users/login' && method === 'POST') {
+    const { username, password } = req.body || {};
+    const found = memoryDB.kfcUsers.find(
+      u => u.username?.toLowerCase() === String(username || '').trim().toLowerCase()
+    );
+    if (!found || found.password !== password) {
+      return res.status(401).json({ success: false, error: 'Invalid KFC Headquarters credentials.' });
+    }
+    if (!found.active) {
+      return res.status(403).json({ success: false, error: 'Account suspended by HFA Admin.' });
+    }
+    const { password: _, ...safe } = found;
+    return res.json({ success: true, data: { ...safe, portal: 'KFC_HQ', token: `hq_fallback_${Date.now()}` } });
   }
 
   return next();
