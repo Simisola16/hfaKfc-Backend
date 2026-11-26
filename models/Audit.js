@@ -51,6 +51,11 @@ const auditSchema = new mongoose.Schema({
   checklistOverallComment: { type: String, default: '' },
   outcomeData: { type: mongoose.Schema.Types.Mixed, default: null },
   recommendationReason: { type: String, default: '' },
+  auditorRecommendation: { type: String, default: '' },
+  adminDecisionReason: { type: String, default: '' },
+  adminJudgedBy: { type: String, default: '' },
+  adminJudgedAt: { type: String, default: '' },
+  shareHistory: { type: [mongoose.Schema.Types.Mixed], default: [] },
   finalized: { type: Boolean, default: false },
   finalizedAt: { type: String, default: '' }
 }, {
