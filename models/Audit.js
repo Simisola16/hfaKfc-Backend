@@ -14,6 +14,24 @@ const auditSchema = new mongoose.Schema({
   endDate: { type: String, default: '' },
   timeIn: { type: String, default: '10:00' },
   timeOut: { type: String, default: '12:00' },
+  startLocation: {
+    lat: { type: Number, default: null },
+    lng: { type: Number, default: null },
+    accuracy: { type: Number, default: null },
+    address: { type: String, default: '' },
+    postcode: { type: String, default: '' },
+    source: { type: String, default: '' },
+    capturedAt: { type: String, default: '' }
+  },
+  endLocation: {
+    lat: { type: Number, default: null },
+    lng: { type: Number, default: null },
+    accuracy: { type: Number, default: null },
+    address: { type: String, default: '' },
+    postcode: { type: String, default: '' },
+    source: { type: String, default: '' },
+    capturedAt: { type: String, default: '' }
+  },
   session: { type: String, default: 'Round Two 2026' },
   category: {
     type: String,

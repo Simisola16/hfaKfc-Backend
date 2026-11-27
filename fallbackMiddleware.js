@@ -361,6 +361,38 @@ function isWithinAssignedDateWindow(asg, now = new Date()) {
   if (urlPath === '/api/map/logs' && method === 'GET') {
     return res.json({ success: true, data: memoryDB.logs });
   }
+  if (urlPath === '/api/map/logs' && method === 'POST') {
+    const body = req.body || {};
+    const eventType = String(body.eventType || '').toLowerCase();
+    if ((eventType === 'end' || eventType === 'logout') && (body.auditAppId || (body.auditor && body.storeName))) {
+      const idx = memoryDB.logs.findIndex(l =>
+        (body.auditAppId && String(l.auditAppId) === String(body.auditAppId)) ||
+        (!body.auditAppId &&
+          String(l.auditor || '').toLowerCase() === String(body.auditor || '').toLowerCase() &&
+          String(l.storeName || '').toLowerCase() === String(body.storeName || '').toLowerCase() &&
+          String(l.date || '') === String(body.date || '') &&
+          !l.endTime)
+      );
+      if (idx >= 0) {
+        const updated = {
+          ...memoryDB.logs[idx],
+          ...body,
+          endTime: body.endTime || body.time || '',
+          endLat: body.endLat ?? body.lat ?? null,
+          endLng: body.endLng ?? body.lng ?? null,
+          endAccuracy: body.endAccuracy ?? body.accuracy ?? null,
+          endLocation: body.endLocation || body.location || '',
+          endGpsSource: body.endGpsSource || body.gpsSource || '',
+        };
+        memoryDB.logs[idx] = updated;
+        return res.json({ success: true, data: updated });
+      }
+    }
+    const id = `log-${Date.now()}`;
+    const item = { ...body, id, _id: id };
+    memoryDB.logs.unshift(item);
+    return res.status(201).json({ success: true, data: item });
+  }
 
   // 11. Users
   if (urlPath === '/api/users' && method === 'GET') {
